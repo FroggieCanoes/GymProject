@@ -10,9 +10,8 @@ namespace GymProject.Repository
     public class WeightRepository
     {
         #region constDB
-
-        private const string dbPath = "C:/Users/Alex/source/repos/GymProject/GymProject/DataBase/GymProjectDB.db";
-        private const string connectionString = $"Data Source={dbPath};Version=3;";
+        private string dbPath = String.Empty;
+        private string connectionString = String.Empty;
 
         private const string queryGetWeightById = "SELECT * FROM Weight WHERE WeightID = @WeightID";
         private const string queryGetLatestWeightsForDifferentExercise =
@@ -34,6 +33,9 @@ namespace GymProject.Repository
         #endregion
         public WeightRepository()
         {
+            string currentDirectory = Directory.GetCurrentDirectory();
+            dbPath = Path.Combine(currentDirectory, "DataBase", "GymProjectDB.db");
+            connectionString = $"Data Source={dbPath};Version=3;";
         }
 
         #region Gets
@@ -90,6 +92,7 @@ namespace GymProject.Repository
                                 Exercicie = (int)ParseEnum<ExerciciesEnum>(reader["Exercise"].ToString())
                             });
                         }
+                        Console.WriteLine(connectionString);
                         return weights;
                     }
                 }
