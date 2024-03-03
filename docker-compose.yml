@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  gymproject:
+    image: ${DOCKER_REGISTRY-}gymproject
+    build:
+      context: .
+      dockerfile: GymProject/Dockerfile
+    ports: 
+      - 8080:80
+    volumes:
+      - ./GymProject/DataBase/:/app/DataBase
+      #- GymDb:/app/DataBase
+      
+volumes:
+  GymDb:
+    external: true

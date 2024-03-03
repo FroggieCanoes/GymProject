@@ -1,7 +1,5 @@
 ﻿using GymProject.Domain;
 using GymProject.Domain.Enum;
-using System;
-using System.Collections.Generic;
 using System.Data.SQLite;
 using System.Text;
 
@@ -92,7 +90,6 @@ namespace GymProject.Repository
                                 Exercicie = (int)ParseEnum<ExerciciesEnum>(reader["Exercise"].ToString())
                             });
                         }
-                        Console.WriteLine(connectionString);
                         return weights;
                     }
                 }

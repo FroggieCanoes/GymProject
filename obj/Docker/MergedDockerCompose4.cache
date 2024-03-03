@@ -1,0 +1,47 @@
+name: dockercompose15448571651248026300
+services:
+  gymproject:
+    build:
+      context: C:\Users\Alex\source\repos\GymProject
+      dockerfile: GymProject/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: gymproject
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 80
+        published: "8080"
+        protocol: tcp
+      - mode: ingress
+        target: 80
+        protocol: tcp
+      - mode: ingress
+        target: 443
+        protocol: tcp
+    volumes:
+      - type: volume
+        source: GymDb
+        target: /app/DataBase
+        volume: {}
+      - type: bind
+        source: C:\Users\Alex\AppData\Roaming/Microsoft/UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\Alex\AppData\Roaming/ASP.NET/Https
+        target: /root/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+networks:
+  default:
+    name: dockercompose15448571651248026300_default
+volumes:
+  GymDb:
+    name: GymDb
+    external: true

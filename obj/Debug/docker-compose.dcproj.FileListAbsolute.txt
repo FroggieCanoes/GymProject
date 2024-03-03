@@ -1,0 +1,16 @@
+C:\Users\Alex\source\repos\GymProject\bin\Debug\GymProject.deps.json
+C:\Users\Alex\source\repos\GymProject\bin\Debug\GymProject.runtimeconfig.json
+C:\Users\Alex\source\repos\GymProject\bin\Debug\appsettings.Development.json
+C:\Users\Alex\source\repos\GymProject\bin\Debug\appsettings.json
+C:\Users\Alex\source\repos\GymProject\bin\Debug\libman.json
+C:\Users\Alex\source\repos\GymProject\bin\Debug\GymProject.exe
+C:\Users\Alex\source\repos\GymProject\bin\Debug\GymProject.dll
+C:\Users\Alex\source\repos\GymProject\bin\Debug\System.Data.SQLite.dll
+C:\Users\Alex\source\repos\GymProject\bin\Debug\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Alex\source\repos\GymProject\bin\Debug\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Alex\source\repos\GymProject\bin\Debug\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Alex\source\repos\GymProject\bin\Debug\Microsoft.OpenApi.dll
+C:\Users\Alex\source\repos\GymProject\bin\Debug\GymProject.pdb
+C:\Users\Alex\source\repos\GymProject\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
+C:\Users\Alex\source\repos\GymProject\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+C:\Users\Alex\source\repos\GymProject\obj\Debug\docker-compose.dcproj.CopyComplete
